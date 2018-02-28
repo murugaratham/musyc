@@ -7,7 +7,17 @@
             "name": "Launch Chrome against localhost",
             "url": "http://localhost:8081",
             "webRoot": "${workSpaceRoot}/dist",
-            "userDataDir": "D:\\vscodechromeprofile"
+            "userDataDir": "D:\\vscodechromeprofile",
+            "skipFiles": [
+                "${workspaceFolder}/node_modules/**/*.js",
+                "${workspaceFolder}/lib/**/*.js",
+                "${workspaceFolder}/bundle.js"
+            ],
+            "runtimeArgs": [
+                "--disable-session-crashed-bubble",
+                "--disable-infobars",
+                "--disable-session-restore" /*https://github.com/Microsoft/vscode-chrome-debug/issues/163*/
+			]
         }
     ]
 }
