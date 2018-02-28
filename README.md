@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/murugaratham/musyc.svg?branch=master)](https://travis-ci.org/murugaratham/musyc)
+
 # Musyc
 A web application built by react, redux & semantic-ui.
 Base boilerplate: [react-redux-spotify](https://github.com/chienkira/react-redux-spotify)
